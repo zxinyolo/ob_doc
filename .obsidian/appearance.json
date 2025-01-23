@@ -6,6 +6,6 @@
   "theme": "moonstone",
   "accentColor": "#b32cf2",
   "textFontFamily": "Maple Mono",
-  "baseFontSize": 30,
+  "baseFontSize": 21,
   "baseFontSizeAction": true
 }
