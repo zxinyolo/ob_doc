@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "xxx.md",
+                "file": "未命名.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "xxx"
+              "title": "未命名"
             }
           }
         ]
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "xxx.md",
+                "file": "未命名.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "xxx 的反向链接列表"
+              "title": "未命名 的反向链接列表"
             }
           },
           {
@@ -112,12 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "xxx.md",
+                "file": "未命名.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "xxx 的出链列表"
+              "title": "未命名 的出链列表"
             }
           },
           {
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "xxx.md"
+                "file": "未命名.md"
               },
               "icon": "lucide-list",
-              "title": "xxx 的大纲"
+              "title": "未命名 的大纲"
             }
           },
           {
@@ -177,9 +177,9 @@
   },
   "active": "7d439f791f75fec4",
   "lastOpenFiles": [
-    "().md",
+    "未命名.md",
     "xxx.md",
-    "test",
-    "xxx.md"
+    "().md",
+    "test"
   ]
 }

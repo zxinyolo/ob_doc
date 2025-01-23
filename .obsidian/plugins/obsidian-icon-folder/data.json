@@ -29,9 +29,5 @@
     "lucideIconPackType": "native",
     "debugMode": false,
     "useInternalPlugins": false
-  },
-  "test": {
-    "iconName": "LiAlignCenter",
-    "iconColor": "#e00b0b"
   }
 }
