@@ -13,10 +13,10 @@
             "state": {
               "type": "excel-pro-view",
               "state": {
-                "file": "读书清单.md"
+                "file": "阅读书单.md"
               },
               "icon": "lucide-file",
-              "title": "读书清单"
+              "title": "阅读书单"
             }
           }
         ]
@@ -91,7 +91,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "读书清单.md",
+                "file": "阅读书单.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,7 +101,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "读书清单 的反向链接列表"
+              "title": "阅读书单 的反向链接列表"
             }
           },
           {
@@ -110,12 +110,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "读书清单.md",
+                "file": "阅读书单.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "读书清单 的出链列表"
+              "title": "阅读书单 的出链列表"
             }
           },
           {
@@ -137,10 +137,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "读书清单.md"
+                "file": "阅读书单.md"
               },
               "icon": "lucide-list",
-              "title": "读书清单 的大纲"
+              "title": "阅读书单 的大纲"
             }
           },
           {
@@ -174,10 +174,10 @@
       "sheet-plus:创建 Excel 文件": false
     }
   },
-  "active": "7d439f791f75fec4",
+  "active": "2df234e25c80e06a",
   "lastOpenFiles": [
     "未命名.md",
-    "读书清单.md",
+    "阅读书单.md",
     "阅读书单.xlsx",
     "qwr.md",
     "xxx.md",
