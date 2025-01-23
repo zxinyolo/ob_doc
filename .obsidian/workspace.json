@@ -172,11 +172,13 @@
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
       "obsidian-git:Open Git source control": false,
-      "obsidian-excalidraw-plugin:新建绘图文件": false
+      "obsidian-excalidraw-plugin:新建绘图文件": false,
+      "sheet-plus:创建 Excel 文件": false
     }
   },
-  "active": "7d439f791f75fec4",
+  "active": "2df234e25c80e06a",
   "lastOpenFiles": [
+    "阅读书单.xlsx",
     "未命名.md",
     "qwr.md",
     "xxx.md",
