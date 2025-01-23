@@ -15,7 +15,7 @@
               "state": {
                 "file": "未命名.md",
                 "mode": "source",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
               "title": "未命名"
@@ -177,6 +177,7 @@
   },
   "active": "7d439f791f75fec4",
   "lastOpenFiles": [
+    "qwr.md",
     "未命名.md",
     "xxx.md",
     "().md",
