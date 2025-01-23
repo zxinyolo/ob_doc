@@ -5,5 +5,7 @@
   "nativeMenus": false,
   "theme": "moonstone",
   "accentColor": "#b32cf2",
-  "textFontFamily": "Maple Mono"
+  "textFontFamily": "Maple Mono",
+  "baseFontSize": 30,
+  "baseFontSizeAction": true
 }
