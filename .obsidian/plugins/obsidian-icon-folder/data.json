@@ -6,6 +6,7 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "LiAlignHorizontalSpaceAround",
       "LiAlignCenter"
     ],
     "recentlyUsedIconsSize": 5,
@@ -29,5 +30,9 @@
     "lucideIconPackType": "native",
     "debugMode": false,
     "useInternalPlugins": false
+  },
+  "八股文": {
+    "iconName": "LiAlignHorizontalSpaceAround",
+    "iconColor": "#09ec18"
   }
 }

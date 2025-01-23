@@ -11,12 +11,14 @@
             "id": "7d439f791f75fec4",
             "type": "leaf",
             "state": {
-              "type": "database-plugin",
+              "type": "markdown",
               "state": {
-                "file": "test.md"
+                "file": "八股文/限流器.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "database-folder-icon",
-              "title": "test"
+              "icon": "lucide-file",
+              "title": "限流器"
             }
           }
         ]
@@ -91,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "test.md",
+                "file": "八股文/限流器.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "test 的反向链接列表"
+              "title": "限流器 的反向链接列表"
             }
           },
           {
@@ -110,12 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "test.md",
+                "file": "八股文/限流器.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "test 的出链列表"
+              "title": "限流器 的出链列表"
             }
           },
           {
@@ -137,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "test.md"
+                "file": "八股文/限流器.md"
               },
               "icon": "lucide-list",
-              "title": "test 的大纲"
+              "title": "限流器 的大纲"
             }
           },
           {
@@ -175,10 +177,13 @@
       "dbfolder:创建一个新数据库表": false
     }
   },
-  "active": "7d439f791f75fec4",
+  "active": "2df234e25c80e06a",
   "lastOpenFiles": [
-    "未命名.md",
+    "八股文",
+    "八股文/限流器.md",
     "test.md",
+    "5.md",
+    "2.md",
     "阅读书单.md",
     "阅读书单.xlsx",
     "qwr.md",
