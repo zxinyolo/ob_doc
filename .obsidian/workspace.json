@@ -11,14 +11,12 @@
             "id": "7d439f791f75fec4",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excel-pro-view",
               "state": {
-                "file": "未命名.md",
-                "mode": "source",
-                "source": false
+                "file": "读书清单.md"
               },
               "icon": "lucide-file",
-              "title": "未命名"
+              "title": "读书清单"
             }
           }
         ]
@@ -77,7 +75,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 219.5
   },
   "right": {
     "id": "b85d3abb49a51f55",
@@ -93,7 +91,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "未命名.md",
+                "file": "读书清单.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +101,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "未命名 的反向链接列表"
+              "title": "读书清单 的反向链接列表"
             }
           },
           {
@@ -112,12 +110,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "未命名.md",
+                "file": "读书清单.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "未命名 的出链列表"
+              "title": "读书清单 的出链列表"
             }
           },
           {
@@ -139,10 +137,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "未命名.md"
+                "file": "读书清单.md"
               },
               "icon": "lucide-list",
-              "title": "未命名 的大纲"
+              "title": "读书清单 的大纲"
             }
           },
           {
@@ -176,10 +174,11 @@
       "sheet-plus:创建 Excel 文件": false
     }
   },
-  "active": "2df234e25c80e06a",
+  "active": "7d439f791f75fec4",
   "lastOpenFiles": [
-    "阅读书单.xlsx",
     "未命名.md",
+    "读书清单.md",
+    "阅读书单.xlsx",
     "qwr.md",
     "xxx.md",
     "().md",
