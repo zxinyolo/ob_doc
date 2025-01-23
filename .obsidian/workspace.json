@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "123.md",
+                "file": "xxx.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "123"
+              "title": "xxx"
             }
           }
         ]
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "123.md",
+                "file": "xxx.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "123 的反向链接列表"
+              "title": "xxx 的反向链接列表"
             }
           },
           {
@@ -112,12 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "123.md",
+                "file": "xxx.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "123 的出链列表"
+              "title": "xxx 的出链列表"
             }
           },
           {
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "123.md"
+                "file": "xxx.md"
               },
               "icon": "lucide-list",
-              "title": "123 的大纲"
+              "title": "xxx 的大纲"
             }
           },
           {
@@ -171,13 +171,14 @@
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
   "active": "7d439f791f75fec4",
   "lastOpenFiles": [
     "().md",
-    "123.md",
+    "xxx.md",
     "test",
     "xxx.md"
   ]
