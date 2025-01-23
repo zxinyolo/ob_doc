@@ -1,6 +1,8 @@
 {
-  "cssTheme": "Minimal",
+  "cssTheme": "",
   "interfaceFontFamily": "Maple Mono",
   "monospaceFontFamily": "Maple Mono",
-  "nativeMenus": false
+  "nativeMenus": false,
+  "theme": "moonstone",
+  "accentColor": "#b32cf2"
 }
