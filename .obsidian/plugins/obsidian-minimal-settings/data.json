@@ -1,8 +1,8 @@
 {
   "lightStyle": "minimal-light",
   "darkStyle": "minimal-dark",
-  "lightScheme": "minimal-macos-light",
-  "darkScheme": "minimal-macos-dark",
+  "lightScheme": "minimal-notion-light",
+  "darkScheme": "minimal-notion-dark",
   "editorFont": "",
   "lineHeight": 1.5,
   "lineWidth": 40,
