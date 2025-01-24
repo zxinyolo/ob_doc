@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "4d1f15afe54839c1",
+        "id": "fb28de815315feb6",
         "type": "tabs",
         "children": [
           {
-            "id": "7d439f791f75fec4",
+            "id": "d4495d8db620cc23",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "八股文/限流器.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "限流器"
+              "title": "新标签页"
             }
           }
         ]
@@ -146,7 +142,7 @@
             }
           },
           {
-            "id": "89e0f3e72505bc87",
+            "id": "d61d261f25654b12",
             "type": "leaf",
             "state": {
               "type": "git-view",
@@ -160,8 +156,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -171,16 +166,16 @@
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "obsidian-git:Open Git source control": false,
-      "obsidian-excalidraw-plugin:新建绘图文件": false,
-      "sheet-plus:创建 Excel 文件": false,
-      "dbfolder:创建一个新数据库表": false
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2df234e25c80e06a",
+  "active": "4d53bed3d0697863",
   "lastOpenFiles": [
-    "八股文",
     "八股文/限流器.md",
+    "Untitled.md",
+    "demo.md",
+    "浏览器插件ID固定及开启方式.md",
+    "八股文",
     "test.md",
     "5.md",
     "2.md",
