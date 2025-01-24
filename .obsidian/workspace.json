@@ -11,10 +11,14 @@
             "id": "c2d0982df3e36ec5",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Untitled.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "Untitled"
             }
           }
         ]
@@ -134,9 +138,11 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {},
+              "state": {
+                "file": "Untitled.md"
+              },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "Untitled 的大纲"
             }
           },
           {
