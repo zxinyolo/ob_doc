@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "fb28de815315feb6",
+        "id": "8a9ad0136964f2e7",
         "type": "tabs",
         "children": [
           {
-            "id": "d4495d8db620cc23",
+            "id": "c2d0982df3e36ec5",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": "Untitled.md",
-                "bFile": "Untitled.md",
-                "aRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: Untitled"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新标签页"
             }
           }
         ]
@@ -138,11 +134,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "八股文/限流器.md"
-              },
+              "state": {},
               "icon": "lucide-list",
-              "title": "限流器 的大纲"
+              "title": "大纲"
             }
           },
           {
@@ -173,9 +167,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d61d261f25654b12",
+  "active": "c2d0982df3e36ec5",
   "lastOpenFiles": [
     "Untitled.md",
+    "demo.md",
     "Untitled-copy.md",
     "docker/安装minio.md",
     "docker/安装minin.md",
@@ -186,7 +181,6 @@
     "go笔记/Untitled.md",
     "go笔记",
     "八股文/限流器.md",
-    "demo.md",
     "浏览器插件ID固定及开启方式.md",
     "八股文",
     "test.md",
