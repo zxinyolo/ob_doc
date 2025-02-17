@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "80d8db28a894fea3",
+        "id": "3bea538e40f6d2f5",
         "type": "tabs",
         "children": [
           {
-            "id": "b27d82370f18023d",
+            "id": "2576334287a8a11e",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -173,7 +173,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b27d82370f18023d",
+  "active": "2df234e25c80e06a",
   "lastOpenFiles": [
     "大模型/基础知识.md",
     "Untitled.md",
