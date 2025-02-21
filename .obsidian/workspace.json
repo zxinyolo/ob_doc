@@ -20,21 +20,8 @@
               "icon": "lucide-file",
               "title": "基础知识"
             }
-          },
-          {
-            "id": "aa6f0237d1d31673",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.8.7"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.8.7"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -187,7 +174,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "aa6f0237d1d31673",
+  "active": "2576334287a8a11e",
   "lastOpenFiles": [
     "大模型/基础知识.md",
     "Untitled.md",
