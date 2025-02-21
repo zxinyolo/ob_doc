@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "基础知识"
             }
+          },
+          {
+            "id": "aa6f0237d1d31673",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.8.7"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.8.7"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -40,7 +53,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "文件列表"
@@ -173,7 +187,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2df234e25c80e06a",
+  "active": "aa6f0237d1d31673",
   "lastOpenFiles": [
     "大模型/基础知识.md",
     "Untitled.md",
