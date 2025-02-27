@@ -174,10 +174,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2576334287a8a11e",
+  "active": "2df234e25c80e06a",
   "lastOpenFiles": [
-    "go笔记/go小例子/实现限制爬虫请求频率.md",
+    "go笔记/go小例子/生产者消费者.md",
     "go笔记/go小例子/Untitled.md",
+    "go笔记/go小例子/实现限制爬虫请求频率.md",
     "go笔记/go小例子",
     "go笔记/Untitled Folder",
     "go笔记/Untitled.md",
