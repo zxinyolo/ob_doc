@@ -189,6 +189,8 @@
   },
   "active": "daaf3fbd7ce97caf",
   "lastOpenFiles": [
+    "docker/安装postgresql.md",
+    "docker/Untitled.md",
     "大模型/多机分布式多卡部署大模型.md",
     "大模型/Untitled.md",
     "大模型/多卡分布式部署大模型.md",
@@ -205,7 +207,6 @@
     "Untitled-copy.md",
     "docker/安装minio.md",
     "docker/安装minin.md",
-    "docker/Untitled.md",
     "docker",
     "Untitled Folder",
     "go笔记/go并发.md",
