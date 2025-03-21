@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "指纹规则引擎"
             }
+          },
+          {
+            "id": "daaf3fbd7ce97caf",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.8.9"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.8.9"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -174,7 +187,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2576334287a8a11e",
+  "active": "daaf3fbd7ce97caf",
   "lastOpenFiles": [
     "大模型/多机分布式多卡部署大模型.md",
     "大模型/Untitled.md",
