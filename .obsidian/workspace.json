@@ -189,6 +189,8 @@
   },
   "active": "daaf3fbd7ce97caf",
   "lastOpenFiles": [
+    "docker/安装etcd.md",
+    "docker/Untitled.md",
     "go笔记/goframe的使用/自定义错误码.md",
     "go笔记/goframe的使用/Untitled.md",
     "go笔记/goframe的使用",
@@ -196,7 +198,6 @@
     "work/指纹规则引擎数据库选型.md",
     "work/Untitled.md",
     "docker/安装postgresql.md",
-    "docker/Untitled.md",
     "大模型/多机分布式多卡部署大模型.md",
     "大模型/Untitled.md",
     "大模型/多卡分布式部署大模型.md",
@@ -222,7 +223,6 @@
     "test.md",
     "5.md",
     "2.md",
-    "阅读书单.md",
     "阅读书单.xlsx",
     "test"
   ]
