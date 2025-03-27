@@ -4,37 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "3bea538e40f6d2f5",
+        "id": "71e8ce69cba2171f",
         "type": "tabs",
         "children": [
           {
-            "id": "2576334287a8a11e",
+            "id": "05a6c8dc230af883",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "work/指纹规则引擎.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "指纹规则引擎"
-            }
-          },
-          {
-            "id": "daaf3fbd7ce97caf",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.8.9"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.8.9"
+              "title": "新标签页"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -187,8 +170,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "daaf3fbd7ce97caf",
+  "active": "2df234e25c80e06a",
   "lastOpenFiles": [
+    "work/指纹规则引擎.md",
     "docker/安装etcd.md",
     "docker/Untitled.md",
     "go笔记/goframe的使用/自定义错误码.md",
@@ -222,7 +206,6 @@
     "八股文",
     "test.md",
     "5.md",
-    "2.md",
     "阅读书单.xlsx",
     "test"
   ]
