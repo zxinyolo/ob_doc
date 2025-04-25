@@ -11,10 +11,12 @@
             "id": "05a6c8dc230af883",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "新标签页"
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.8.10"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.8.10"
             }
           }
         ]
@@ -170,7 +172,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2df234e25c80e06a",
+  "active": "05a6c8dc230af883",
   "lastOpenFiles": [
     "work/研究fingerprint-generator库.md",
     "work/研究实时生成指纹的可能性.md",
