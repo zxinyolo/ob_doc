@@ -53,6 +53,8 @@ disable_no_new_privs: false
 forward_signals: false
 disable_tsc: false
 
+
+# 限制程序使用的系统资源
 rlimit_as: 4096
 rlimit_as_type: VALUE
 rlimit_core: 0
@@ -96,7 +98,7 @@ uidmap {
   inside_id: ""
   outside_id: ""
   count: 1
-  # 控制root映射qu
+  # 控制root映射权限
   use_newidmap: false
 }
 gidmap {
