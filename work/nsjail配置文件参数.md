@@ -5,6 +5,9 @@ name: "default_jail"
 description: "This is a sample nsjail config converted from proto"
 
 # 启动模式
+# ONCE 执行一次性的脚本或命令
+# STANDALONE_EXECVE 单进程直接执行
+# LISTEN_TCP 
 mode: ONCE
 hostname: "NSJAIL"
 cwd: "/"
