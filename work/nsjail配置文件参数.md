@@ -9,31 +9,44 @@ description: "This is a sample nsjail config converted from proto"
 # STANDALONE_EXECVE 单进程直接执行
 # LISTEN_TCP 
 mode: ONCE
+# 设置NsJail内部看到的主机名 
 hostname: "NSJAIL"
+# 启动程序的工作路径
 cwd: "/"
 
+# 设置为true的时候，可以不改变主机的根目录
 no_pivotroot: false
 port: 0
 bindhost: "::"
 max_conns: 0
 max_conns_per_ip: 0
 
+# 程序最长运行时间
 time_limit: 600
 daemon: false
+# 限制cpu数
 max_cpus: 0
+# 控制CPU调度的优先级
 nice_level: 19
 
 log_file: "/dev/null"
 log_level: INFO
 
+# 控制是否将外部的env注入到jail
 keep_env: false
+# 传入的环境变量
 envar: "DISPLAY"
 
+# 控制是否保留 root 权限
 keep_caps: false
+# 指定保留哪些 capability
 cap: "CAP_SYS_PTRACE"
 
+# 禁用一些错误输出
 silent: false
+# 阻止 jail 进程创建新会话
 skip_setsid: false
+# 防止输出错误信息到控制台
 stderr_to_null: false
 pass_fd: 0
 disable_no_new_privs: false
@@ -69,6 +82,7 @@ persona_read_implies_exec: false
 persona_addr_limit_3gb: false
 persona_addr_no_randomize: false
 
+# 隔离 jail 与外部系统的用户、网络、进程空间
 clone_newnet: true
 clone_newuser: true
 clone_newns: true
@@ -82,6 +96,7 @@ uidmap {
   inside_id: ""
   outside_id: ""
   count: 1
+  # 控制root映射qu
   use_newidmap: false
 }
 gidmap {
@@ -91,6 +106,7 @@ gidmap {
   use_newidmap: false
 }
 
+# 挂载/proc
 mount_proc: true
 
 mount {
