@@ -63,6 +63,55 @@ func main() {
 }
 ```
 
+
+
 #### Browser常用的方法
 
-- New 
+- New：创建一个新的 Browser 实例。
+- ControlURL(url string)`：设置 DevTools WebSocket 地址，用于连接已启动的远程浏览器
+- Connect() error：连接到浏览器，返回错误，可在生产环境中捕获并处理
+- MustConnect() *rod.Browser：连接浏览器，失败时 panic，适合脚本或调试使用
+- Page(url string) (*rod.Page, error)：创建新页面，可直接传入 URL 也可传空字符串后调用 Navigate
+- MustPage(url string) *rod.Page：创建并跳转页面，失败时 panic
+- Close() error：关闭浏览器实例，释放资源
+
+
+
+#### Page 常用的方法
+
+- Navigate(url string) error：跳转到指定 URL
+- WaitLoad() error：等待页面加载完成
+- WaitStable() error：等待 DOM 稳定，无新增或删除节点后再继续
+- Element(selector string) (*rod.Element, error)：查找第一个匹配的元素
+- MustElement(selector string) *rod.Element：查找第一个匹配的元素，失败时 panic
+- Elements(selector string) ([]*rod.Element, error)：查找所有匹配的元素
+- MustElements(selector string) []*rod.Element：查找所有匹配的元素，失败时 panic
+- Evaluate(js string) (*proto.RuntimeRemoteObject, error)：执行一段 JavaScript 并返回结果
+- MustEvaluate(js string) *proto.RuntimeRemoteObject：执行 JavaScript，失败时 panic
+- Screenshot(path string) error：对当前视口截图并保存到指定路径
+- MustScreenshot(path string)：对当前视口截图，失败时 panic
+- Close() error：关闭页面
+
+
+
+#### Element 常用的方法
+
+- Text() (string, error)：获取元素的可见文本内容
+- MustText() string：获取元素的可见文本内容，失败时 panic
+- HTML() (string, error)：获取元素的内部 HTML（包括子元素）
+- MustHTML() string：获取元素的内部 HTML，失败时 panic
+- Property(name string) (*proto.RuntimeRemoteObject, error)：获取元素属性值
+- MustProperty(name string) *proto.RuntimeRemoteObject：获取属性值，失败时 panic
+- Attribute(name string) (*string, error)：获取属性，如果不存在返回 nil
+- MustAttribute(name string) *string：获取属性，失败时 panic
+- Click() error：模拟用户点击元素
+- MustClick()：点击元素，失败时 panic
+- Input(text string) error：在元素（如 input、textarea）中输入文本
+- MustInput(text string)：输入文本，失败时 panic
+- Hover() error：将鼠标悬停在元素上
+- MustHover()：悬停，失败时 panic
+- ScrollIntoView() error：滚动页面使元素可见。
+- MustScrollIntoView()：滚动至可见，失败时 panic。
+
+
+
