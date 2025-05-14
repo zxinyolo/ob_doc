@@ -174,6 +174,8 @@
   },
   "active": "05a6c8dc230af883",
   "lastOpenFiles": [
+    "go笔记/SQLite分库模式.md",
+    "go笔记/Untitled.md",
     "work/rod库调研.md",
     "work/Untitled.md",
     "go笔记/设计模式/工厂方法.md",
@@ -203,8 +205,6 @@
     "大模型/多机分布式多卡部署大模型.md",
     "大模型/Untitled.md",
     "大模型/多卡分布式部署大模型.md",
-    "大模型/基础知识.md",
-    "go笔记/go小例子/生产者消费者.md",
     "go笔记/go小例子",
     "大模型",
     "docker",
