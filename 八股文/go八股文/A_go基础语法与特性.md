@@ -30,4 +30,17 @@ type bmap struct {
 ```
 
 - 每个bmap中的bucketCnt恒为8
+
 - tophash： 存储每个key哈希值的高8位；值< minTopHash表示空或已删除的状态
+- keys/values：将所有的key集中存放，再集中存放所有value，可以减少结构体内填充（padding）带来的浪费
+- overflow：链表式处理冲突，当同一bucket超过8条记录时，分配新的溢出bucket
+
+3. 插入，查找和删除
+
+- 哈希及定位bucket
+
+  ```go
+  hash := hashKey(key, h.hash0)
+  idx  := hash & (uintptr(1)<<h.B - 1) // 取低 B 位，得到 bucket 下标
+  ```
+
