@@ -58,4 +58,13 @@ type bmap struct {
      - 保持旧buckets，在每次map操作时渐进搬迁部分就bucket到新buckets（通过nevacuate指针记录进度）
      - 搬迁完毕后，丢弃旧buckets，将新buckets替换为主储存
 5. 随机化与安全
-   - GO在运行时为每个mapfen pei
+   - GO在运行时为每个map分配一个随机种子hash0,每次哈希计算都会混入这个种子
+     - 防止攻击者预测哈希值分布，避免Hash Dos
+     - 使得同一程序多次运行的map遍历顺序不同
+
+#### 小结：
+
+1. map是哈希表，有hamp+bmap组合而成
+2. 每个bucket固定承载8条，使用链表处理溢出。
+3. 删除不收缩桶数组；扩容通过渐进搬迁做到零停顿。
+4. 哈希种子随机化保证安全
