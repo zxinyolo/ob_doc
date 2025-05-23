@@ -44,4 +44,18 @@ type bmap struct {
   idx  := hash & (uintptr(1)<<h.B - 1) // 取低 B 位，得到 bucket 下标
   ```
 
-- 
+- 在bucket链表中查找
+  - 扫描tophash找到可能匹配的cell，再对比完整key
+  - 若命中，更新或读取值->结束
+  - 否则若有overflow，继续在下一个bucket查找；否则到空槽插入
+- 删除
+  - 找到对应cell，将tophash[i]标记为deleted，置key/value为零值
+  - 不会自动缩容，bucket数量和已分配内存保持不变(为后续插入复用)
+
+4. 动态扩容
+   - 当load factor（元素数/bucket总容量）超过阈值（约6.5）,触发扩容；
+     - 新建一片大小为2x的buckets
+     - 保持旧buckets，在每次map操作时渐进搬迁部分就bucket到新buckets（通过nevacuate指针记录进度）
+     - 搬迁完毕后，丢弃旧buckets，将新buckets替换为主储存
+5. 随机化与安全
+   - GO在运行时为每个mapfen pei
