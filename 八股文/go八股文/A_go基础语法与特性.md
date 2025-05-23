@@ -44,3 +44,4 @@ type bmap struct {
   idx  := hash & (uintptr(1)<<h.B - 1) // 取低 B 位，得到 bucket 下标
   ```
 
+- 
