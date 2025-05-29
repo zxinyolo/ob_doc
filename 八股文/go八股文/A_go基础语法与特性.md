@@ -73,7 +73,19 @@
 
 6. **map和chan必须初始化后才能用（区别于基本类型）**
 
+   ```go
+   var m map[string]int // nil map, 不能用
+   m["a"] = 1 // panic: assignment to entry in nil map
+   
+   // 正确用法
+   m := make(map[string]int)
+   m["a"] = 1
+   
+   var ch chan int  // nil chan
+   ch <- 1
    ```
+
+   
 
 #### map底层原理
 
