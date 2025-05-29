@@ -42,11 +42,38 @@
    - 不能在函数外部使用
    - 左边变量至少要有一个是新的变量，否则会编译错误
 
-4. new分配内存（返回指针）
+4. **new分配内存（返回指针）**
 
-   
+   ```go
+   p := new(int)
+   *p = 10
+   fmt.Println(*p)
+   ```
 
-5. make初始化内置引用类型（slice,map,chan）
+   - new(T)会返回一个指针类型T的指针
+   - 内存被初始化为T的零值
+   - 常用于简单结构体，基础类型的指针创建
+
+   ```go
+   type Person struct { Name string}
+   p := new(Person)
+   ```
+
+5. **make初始化内置引用类型（slice,map,chan）**
+
+   ```go
+   s := make([]int,5)
+   m := make(map[string]int)
+   c := make(chan int)
+   ```
+
+   - 只能用于这三种类型：slice， map， chan
+   - make 返回的是已初始化后的值，不是指针
+   - 会为这些结构分配内存并初始化底层结构
+
+6. **map和chan必须初始化后才能用（区别于基本类型）**
+
+   ```
 
 #### map底层原理
 
