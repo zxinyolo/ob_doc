@@ -172,8 +172,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "05a6c8dc230af883",
+  "active": "d61d261f25654b12",
   "lastOpenFiles": [
+    "八股文/数据密集型应用系统设计.md",
+    "八股文/Untitled.md",
     "八股文/go八股文/E_算法与编程.md",
     "八股文/go八股文/Untitled.md",
     "八股文/go八股文/D_工程实践与设计.md",
@@ -206,8 +208,6 @@
     "阅读",
     "Untitled Folder",
     "work/浏览器指纹信息关键字段.md",
-    "work/指纹规则引擎.md",
-    "docker/安装etcd.md",
     "go笔记/goframe的使用",
     "go笔记/go小例子"
   ]
