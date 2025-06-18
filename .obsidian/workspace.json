@@ -11,12 +11,14 @@
             "id": "05a6c8dc230af883",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.8.10"
+                "file": "demo.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.8.10"
+              "icon": "lucide-file",
+              "title": "demo"
             }
           }
         ]
@@ -172,8 +174,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d61d261f25654b12",
+  "active": "05a6c8dc230af883",
   "lastOpenFiles": [
+    "demo.md",
     "test",
     "八股文/数据密集型应用系统设计.md",
     "八股文/Untitled.md",
@@ -208,7 +211,6 @@
     "阅读/思维模型.md",
     "阅读",
     "Untitled Folder",
-    "go笔记/goframe的使用",
-    "go笔记/go小例子"
+    "go笔记/goframe的使用"
   ]
 }
