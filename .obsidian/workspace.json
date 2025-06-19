@@ -174,8 +174,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "05a6c8dc230af883",
+  "active": "2df234e25c80e06a",
   "lastOpenFiles": [
+    "work/firecrawl调研.md",
+    "work/firecrawl.md",
+    "work/Untitled.md",
     "test.md",
     "Untitled.md",
     "demo.md",
@@ -197,7 +200,6 @@
     "go笔记/SQLite分库模式.md",
     "go笔记/Untitled.md",
     "work/rod库调研.md",
-    "work/Untitled.md",
     "go笔记/设计模式/工厂方法.md",
     "go笔记/设计模式/Untitled.md",
     "go笔记/设计模式",
@@ -207,8 +209,6 @@
     "work/研究fingerprint-generator库.md",
     "work/研究实时生成指纹的可能性.md",
     "work/Untitled 1.md",
-    "work/postgresql索引.md",
-    "阅读/核心思维模型.md",
     "阅读",
     "Untitled Folder",
     "go笔记/goframe的使用"
