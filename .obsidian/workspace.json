@@ -176,6 +176,7 @@
   },
   "active": "05a6c8dc230af883",
   "lastOpenFiles": [
+    "八股文/go八股文/B_并发与协程.md",
     "demo.md",
     "八股文/RabbitMQ.md",
     "八股文/Untitled.md",
@@ -208,7 +209,6 @@
     "work/nsjail配置文件参数.md",
     "work/随笔记录.md",
     "work/研究fingerprint-generator库.md",
-    "work/研究实时生成指纹的可能性.md",
     "阅读",
     "Untitled Folder",
     "go笔记/goframe的使用"
