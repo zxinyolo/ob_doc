@@ -74,8 +74,7 @@
               "title": "书签"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -162,7 +161,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 210.5
+    "width": 322.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -175,7 +174,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "05a6c8dc230af883",
+  "active": "2df234e25c80e06a",
   "lastOpenFiles": [
     "2025-07-07.md",
     "八股文/RabbitMQ.md",
