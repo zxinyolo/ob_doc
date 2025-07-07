@@ -74,11 +74,12 @@
               "title": "书签"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 219.5
+    "width": 253.5
   },
   "right": {
     "id": "b85d3abb49a51f55",
@@ -161,7 +162,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 210.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -176,9 +177,10 @@
   },
   "active": "05a6c8dc230af883",
   "lastOpenFiles": [
+    "2025-07-07.md",
+    "八股文/RabbitMQ.md",
     "八股文/go八股文/B_并发与协程.md",
     "demo.md",
-    "八股文/RabbitMQ.md",
     "八股文/Untitled.md",
     "work/firecrawl调研.md",
     "work/firecrawl.md",
@@ -208,7 +210,6 @@
     "go笔记/Untitled Folder",
     "work/nsjail配置文件参数.md",
     "work/随笔记录.md",
-    "work/研究fingerprint-generator库.md",
     "阅读",
     "Untitled Folder",
     "go笔记/goframe的使用"
