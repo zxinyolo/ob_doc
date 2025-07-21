@@ -1,0 +1,28 @@
+1. 前端请求初始化验证码参数
+   - 前端页面加载后，会向后端发送请求（如 `/api/captcha/init`），请求生成验证码初始化信息
+
+2. 后端从 Geetest 获取 challenge
+   - 后端接收到前端请求后，调用极验的初始化接口，获取 `challenge`、`gt` 和 `success` 字段。
+      这一步是后端访问极验服务器，属于「一次验证」的准备阶段。可选地，后端也可以将 `challenge` 放入 Redis 缓存，以便后续验证校验用
+3. 前端加载 Geetest 验证码组件
+   - 前端收到初始化数据（`gt` 和 `challenge`），通过极验提供的 JS SDK 加载验证码 UI（滑块、人机、点选等形式）。
+      这一步会在页面渲染验证码组件，并允许用户进行人机操作。JS SDK 会自动管理 captchaId（即 `gt`）的生命周期。
+
+1. 用户完成操作，前端获取凭证
+
+   - 用户操作完验证码（如滑动滑块成功），前端的 Geetest SDK 会自动从极验服务端拿到验证凭证：
+
+     - `geetest_challenge`
+     - `geetest_validate`
+     - `geetest_seccode`
+
+     这些数据随后会被前端发送给后端进行二次验证。
+
+2. 前端将 challenge/validate/seccode 提交后端
+
+3. 
+
+4. 后端调用 Geetest 验证接口二次验证
+
+5. 后端根据验证结果继续业务流程
+
