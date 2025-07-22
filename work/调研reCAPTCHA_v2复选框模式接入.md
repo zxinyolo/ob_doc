@@ -1,6 +1,6 @@
 ## reCAPTCHA_v2_Invisible
 
->使用：使用谷歌邮箱登录https://cloud.google.com/security/products/recaptcha?hl=zh_cn，创建密钥 拿到id和key
+>使用：使用谷歌邮箱登录https://cloud.google.com/security/products/recaptcha?hl=zh_cn，点击开始使用 创建类型，拿到id和key
 >
 >收费策略：免费版每月免费使用10000次，使用完后安全性会降低或者报错
 
