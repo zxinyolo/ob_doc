@@ -1,6 +1,6 @@
 ## Geetestv4
 
->使用：通过手机号和邮箱进行注册，登录后台后，选择V4(适应性验证/行为验)
+>使用：通过手机号和邮箱进行注册，登录后台后（https://auth.geetest.com/product），选择V4(适应性验证/行为验)，添加业务场景获取ID和KEY
 >
 >注册账号地址：https://docs.geetest.com/
 >

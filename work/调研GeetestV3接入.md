@@ -1,5 +1,7 @@
 ## Geetestv3
 
+>使用：通过手机号和邮箱进行注册，登录后台后（https://auth.geetest.com/product），选择V3(行为验证)，添加业务场景获取ID和KEY
+>
 >注册账号地址：https://docs.geetest.com/
 >
 >收费策略：试用版本单个key只能用100次的，线上不支持付费
