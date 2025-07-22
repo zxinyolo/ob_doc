@@ -1,4 +1,4 @@
-## reCAPTCHA_v2_Invisible
+## reCAPTCHA_v3
 
 >使用：使用谷歌邮箱登录https://cloud.google.com/security/products/recaptcha?hl=zh_cn，点击开始使用 创建类型，拿到id和key
 >
