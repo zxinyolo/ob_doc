@@ -23,7 +23,7 @@
 - 后端接收到 token 后，使用服务端 `secret key` 调用 Google 官方验证接口：
 
   ```
-  ruby复制编辑POST https://www.google.com/recaptcha/api/siteverify
+  POST https://www.google.com/recaptcha/api/siteverify
   参数：
     secret=你的SecretKey
     response=客户端提交的token
