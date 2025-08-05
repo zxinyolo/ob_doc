@@ -115,7 +115,7 @@ my-site/
 └── themes/
 ```
 
-构建站点，Hugo会创建一个public目录，还会创建一个resource目录：
+构建站点，Hugo会创建一个public目录，还会创建一个resources目录：
 
 ```shell
 my-site/
@@ -135,7 +135,15 @@ my-site/
 └── themes/
 ```
 
+##### 3.2 目录
 
-
-
+- **archetypes**： 目录包含用于新内容的模板
+- **assets**：包含通常通过资源管道传递的全局资源，包括图片，CSS，Sass，js，ts等资源
+- **config**： 包含站点配置
+- **content**：包含组成站点内容的标记文件（通常是markdown）和页面资源
+- **data**： 包含用户增强内容，配置，本地化和导航的数据文件（JSON，TOML，YAML或XML）
+- **i18n**： 包含多语言站点翻译表
+- **layouts**：包含将内容、数据、和资源转换为网站的模板
+- **public**： 包含发布的网站，在用hugo命令时生成
+- **resources**：包含Hugo资源管道的huan chun
 
