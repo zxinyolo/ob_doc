@@ -38,3 +38,24 @@ hugo
 
 >Hugo构建站点前不会清空public目录，现有同名文件会被覆盖，但是不会被删除，会被保留下来
 
+##### 2.4 草稿、未来和过期内容
+
+Hugo允许在内容的前置元数据中设置**draft**，**data**，**publishDate**，**expiryDate**。默认情况下，Hugo在以下情况下不会发布内容：
+
+- draft的值为true
+- date在未来
+- publishDate在未来
+- expiryDate在过去
+
+可以在运行hugo或hugo server时使用命令行标志覆盖默认行为：
+
+```shell
+hugo --buildDrafts    # 或 -D
+hugo --buildExpired   # 或 -E
+hugo --buildFuture    # 或 -F
+```
+
+
+
+
+
