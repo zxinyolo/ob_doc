@@ -55,6 +55,20 @@ hugo --buildExpired   # 或 -E
 hugo --buildFuture    # 或 -F
 ```
 
+##### 2.5 开发和测试站点
+
+需要查看站点的内容，需要进入项目目录运行命令：
+
+```shell
+hugo server
+```
+
+hugo server命令会将站点构建到内存中，使用一个最小的HTTP服务器提供页面
+
+```shell
+Web服务器可用于 http://localhost:1313/ 
+```
+
 
 
 
