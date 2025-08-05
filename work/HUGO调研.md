@@ -71,5 +71,71 @@ Web服务器可用于 http://localhost:1313/
 
 
 
+#### 3. 目录结构
+
+##### 3.1 站点骨架
+
+创建新站点，Hugo会生成一个项目骨架：
+
+```shell
+hugo new site my-site
+```
+
+会创建以下目录：
+
+```shell
+my-site/
+├── archetypes/
+│   └── default.md
+├── assets/
+├── content/
+├── data/
+├── i18n/
+├── layouts/
+├── static/
+├── themes/
+└── hugo.toml         <-- 站点配置
+```
+
+也可以将配置文件放到目录中：
+
+```shell
+my-site/
+├── archetypes/
+│   └── default.md
+├── assets/
+├── config/           <-- 站点配置
+│   └── _default/
+│       └── hugo.toml
+├── content/
+├── data/
+├── i18n/
+├── layouts/
+├── static/
+└── themes/
+```
+
+构建站点，Hugo会创建一个public目录，还会创建一个resource目录：
+
+```shell
+my-site/
+├── archetypes/
+│   └── default.md
+├── assets/
+├── config/       
+│   └── _default/
+│       └── hugo.toml
+├── content/
+├── data/
+├── i18n/
+├── layouts/
+├── public/       <-- 构建站点时创建
+├── resources/    <-- 构建站点时创建
+├── static/
+└── themes/
+```
+
+
+
 
 
