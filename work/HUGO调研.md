@@ -145,5 +145,7 @@ my-site/
 - **i18n**： 包含多语言站点翻译表
 - **layouts**：包含将内容、数据、和资源转换为网站的模板
 - **public**： 包含发布的网站，在用hugo命令时生成
-- **resources**：包含Hugo资源管道的huan chun
+- **resources**：包含Hugo资源管道的缓存输出，在运行hugo或hugo server命令时生成。此缓存目录包括CSS和图片
+- **static**： 包含在构建站点时将复制到public目录的文件
+- **themes**： 包含一个或多个主题
 
