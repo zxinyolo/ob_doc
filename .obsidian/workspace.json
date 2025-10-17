@@ -1,0 +1,200 @@
+{
+  "main": {
+    "id": "10196f7d648ba502",
+    "type": "split",
+    "children": [
+      {
+        "id": "98d5407ecc96ee6a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "eedaf7b4a150b7b1",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新标签页"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5d3a4e894be35e29",
+    "type": "split",
+    "children": [
+      {
+        "id": "b14952c45016c815",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2df234e25c80e06a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "ba84c19a4dc583dc",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "e79a71eb2146325f",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 219.5
+  },
+  "right": {
+    "id": "b85d3abb49a51f55",
+    "type": "split",
+    "children": [
+      {
+        "id": "db583a23b3d4ca8b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b6be1356d25f8bc8",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "八股文/限流器.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "限流器 的反向链接列表"
+            }
+          },
+          {
+            "id": "7e573ac29930b0f0",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "八股文/限流器.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "限流器 的出链列表"
+            }
+          },
+          {
+            "id": "325f75f309f22876",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "4d53bed3d0697863",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Untitled.md"
+              },
+              "icon": "lucide-list",
+              "title": "Untitled 的大纲"
+            }
+          },
+          {
+            "id": "d61d261f25654b12",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 247.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:创建新数据库": false,
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "eedaf7b4a150b7b1",
+  "lastOpenFiles": [
+    "Untitled.md",
+    "demo.md",
+    "Untitled-copy.md",
+    "docker/安装minio.md",
+    "docker/安装minin.md",
+    "docker/Untitled.md",
+    "docker",
+    "Untitled Folder",
+    "go笔记/go并发.md",
+    "go笔记/Untitled.md",
+    "go笔记",
+    "八股文/限流器.md",
+    "浏览器插件ID固定及开启方式.md",
+    "八股文",
+    "test.md",
+    "5.md",
+    "2.md",
+    "阅读书单.md",
+    "阅读书单.xlsx",
+    "qwr.md",
+    "xxx.md",
+    "().md",
+    "test"
+  ]
+}
