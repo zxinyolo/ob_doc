@@ -416,7 +416,58 @@ b[0].append(1)
   # 测试代码执行完毕
   ```
 
-  
+
+### 装饰器要装饰一个 **异步函数（async def）**怎么做？
+
+```python
+import time
+import threading
+from functools import wraps
+from collections import Counter
+
+# 全局锁和计数器
+lock = threading.Lock()
+call_counter = Counter()
+
+def log_time(func):
+    @wraps(func)
+    def wrapper(*args, **kwargs):
+        start = time.time()
+        try:
+            result = func(*args, **kwargs)
+            return result
+        finally:
+            end = time.time()
+            elapsed = end - start
+            # 线程安全更新调用次数
+            with lock:
+                call_counter[func.__name__] += 1
+            print(f"{func.__name__} executed in {elapsed:.4f}s, "
+                  f"call count: {call_counter[func.__name__]}")
+    # 装饰器属性，也可以选择使用
+    wrapper.call_count = 0
+    return wrapper
+
+# 示例函数
+@log_time
+def test(x):
+    time.sleep(0.1)
+    return x * 2
+
+# 测试
+for _ in range(5):
+    test(3)
+```
+
+#### **✅ 核心设计点：**
+
+1. **线程安全**：通过 threading.Lock 包裹 Counter 更新，避免竞态条件。
+2. **函数属性**：wrapper.call_count 可以单独用来跟踪某个函数计数（这里用全局 Counter 更适合多函数统计）。
+3. **返回值透传**：使用 try/finally 保证统计逻辑即使函数抛异常也能执行。
+4. **元信息保留**：用 @wraps(func) 保留原函数的 __name__、__doc__ 等属性。
+5. **可扩展**：可在 finally 内增加耗时统计、异常计数等。
+
+
 
 ### memoryview
 
