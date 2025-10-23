@@ -382,17 +382,17 @@ b[0].append(1)
       self.arg1 = arg1
       self.arg2 = arg2
   
-  def __call__(self, f):
-      print('执行类Decorator的__call__()方法')
+      def __call__(self, f):
+          print('执行类Decorator的__call__()方法')
   
-      def wrap(*args):
-          print('执行wrap()')
-          print('装饰器参数：', self.arg1, self.arg2)
-          print('执行' + f.__name__ + '()')
-          f(*args)
-          print(f.__name__ + '()执行完毕')
+          def wrap(*args):
+              print('执行wrap()')
+              print('装饰器参数：', self.arg1, self.arg2)
+              print('执行' + f.__name__ + '()')
+              f(*args)
+              print(f.__name__ + '()执行完毕')
   
-      return wrap
+          return wrap
   
   @Decorator('Hello', 'World')
   def example(a1, a2, a3):
