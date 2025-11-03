@@ -145,4 +145,8 @@ app.control.inspect().reserved() # 查看待执行任务
      - 未使用 acks_late 导致任务重复执行；
      - 内存未释放（对象引用、C 扩展泄露）。
    - 排查与解决
-     - celery -A app worker --max-tasks-per-child=100，
+     - celery -A app worker --max-tasks-per-child=100，每执行 100 个任务重启一次子进程，强制释放内存。
+     - 若任务结果不需要存储：app.conf.task_ignore_result = True
+     - 定期清理 backend：celery -A app purge
+2. Worker CPU 飙高 / 卡死
+   - 常见原因
