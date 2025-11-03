@@ -8,7 +8,10 @@ celery是一个基于分布式消息传递的异步任务队列/任务调度框�
 
 核心组件：
 
-- Broker（消息中间件）： 
+- Broker（消息中间件）：负责消息中转，例如rabbitmq，reids。生产者将任务发送到broker，消费者从中取出任务
+- Worker（工作进程）：实际执行任务的节点，可以分布在不同的机器上
+- Task（任务）：被定义的python函数，通过装饰器@app.task声明
+- Result Backend（结果存储）：存放任务结果，用于状态查询，任务链，回调等，支持redis，
 
 #### celery底层是怎么分配、调度任务的，多worker，启动多少个worker怎么决定？
 
