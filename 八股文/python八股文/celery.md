@@ -136,6 +136,13 @@ app.control.inspect().reserved() # 查看待执行任务
 
 1. **Worker 内存暴涨 / OOM（Out Of Memory）**
    - 场景
-     - 
+     - 长时间运行的的worker内存持续增加
+     - 最后被系统杀死
+     - 重启后恢复
    - 常见原因
+     - 任务结果未清理，backend 不断堆积；
+     - 大量返回大对象（列表、图像、DataFrame）；
+     - 未使用 acks_late 导致任务重复执行；
+     - 内存未释放（对象引用、C 扩展泄露）。
    - 排查与解决
+     - celery -A app worker --max-tasks-per-child=100，
