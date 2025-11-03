@@ -150,3 +150,20 @@ app.control.inspect().reserved() # 查看待执行任务
      - 定期清理 backend：celery -A app purge
 2. Worker CPU 飙高 / 卡死
    - 常见原因
+     - cpu密集型任务（如加密，图片处理）在同步执行
+     - 未开启prefork
+     - 任务中自信呢死循环或阻塞IO
+   - 优化建议
+     - 将cpu密集型任务分配到单独队列
+     - 使用多进程并行：celery -A app worker -Q cpu_tasks --concurrency=8 --pool=prefork
+     - IO密集型任务建议使用gevent：celery -A app worker --pool=gevent --concurrency=1000
+
+3. Redis连接丢失/BrokenPipeError
+   - 原因
+     - redis重启
+     - 连接池未释放
+     - Worker过多同时连接Redis
+   - 解决方案
+     - 增加Broker心跳：app.conf.broker_transport_options = {'visibility_timeout': 3600, 'socket_keepalive': True}
+     - 使用持久连接池（如redis_max_connections)
+     - 如果频繁掉线，考虑RabbitMQ替代Redis
