@@ -159,6 +159,7 @@ app.control.inspect().reserved() # 查看待执行任务
      - IO密集型任务建议使用gevent：celery -A app worker --pool=gevent --concurrency=1000
 
 3. Redis连接丢失/BrokenPipeError
+
    - 原因
      - redis重启
      - 连接池未释放
@@ -167,7 +168,9 @@ app.control.inspect().reserved() # 查看待执行任务
      - 增加Broker心跳：app.conf.broker_transport_options = {'visibility_timeout': 3600, 'socket_keepalive': True}
      - 使用持久连接池（如redis_max_connections)
      - 如果频繁掉线，考虑RabbitMQ替代Redis
+
 4. Redis队列卡住/backlog堆积
+
    - 场景
      - Redis任务队列key中堆积几万条任务
      - Worker吃不完
@@ -182,16 +185,39 @@ app.control.inspect().reserved() # 查看待执行任务
      - 增加并发度
      - 为长时间单独分队列
      - 使用task_routes控制分流
+
 5. 任务丢失
+
    - 场景
+
      - Producer执行task.delay()
      - worker没有执行
      - 日志中无报错
+
    - 原因分析：
+
      - Worker崩溃或未启动
      - Broker使用Redis且任务过期(visibility_timeout)
      - ACK丢失（Worker收到但未确认）
      - 任务结果被清理（结果存储TTL）
      - task_acks_late=False且Worker被kill
+
    - 解决方案：
+
      - 使用持久化队列：
+
+       app.conf.task_acks_late = True
+       app.conf.worker_prefetch_multiplier = 1
+       app.conf.broker_transport_options = {'visibility_timeout': 3600}
+
+     - 开启acks_late: 任务执行完再确认
+     - 监控任务ID+backend确认
+
+6. 重复执行任务
+
+   - 原因：
+     - Worker在执行任务时宕机
+     - 未启用acks_late
+     - Broker认为任务未完成又重新投递
+   - 修复
+     - 开启acks_late=Tr
