@@ -37,6 +37,22 @@ celery是一个基于分布式消息传递的异步任务队列/任务调度框�
 
 #### celery任务的优先级怎么配置的
 
+Celery 的任务优先级是通过 **Broker 支持的优先级队列机制** 实现的，需要在 Broker（如 RabbitMQ 或 Redis 5.0+）支持的前提下，通过 apply_async(priority=n) 或任务队列声明中的 queue_arguments={'x-max-priority': 10} 来实现优先级调度。
 
+#### celery怎么排查错误的，任务丢失
 
-#### celery怎么排查错误的，任务丢失，
+| **阶段**           | **关键组件**   | **常见问题**                        | **排查手段**                      |
+| ------------------ | -------------- | ----------------------------------- | --------------------------------- |
+| 1️⃣ 生产者发任务     | Celery Client  | delay/apply_async 没真正 push 出去  | 启动 debug 日志、检查 broker 连接 |
+| 2️⃣ Broker 消息队列  | Redis/RabbitMQ | 队列满、key 过期、掉线、持久化没开  | CLI 或管理台查看队列消息数        |
+| 3️⃣ Worker 消费任务  | celery worker  | worker 未启动、路由错、任务导入异常 | 启动时加 -l DEBUG 观察注册任务    |
+| 4️⃣ Backend 保存结果 | Redis/Database | 任务执行完但结果没保存              | 检查 backend 配置、任务状态查询   |
+
+app.control.inspect().active() # 查看活跃任务
+
+app.control.inspect().reserved() # 查看待执行任务
+
+- Worker 异常退出或系统崩溃
+
+  
+
