@@ -54,5 +54,62 @@ app.control.inspect().reserved() # 查看待执行任务
 
 - Worker 异常退出或系统崩溃
 
-  
+  - 检查日志是否有崩溃退出日志
+  - 调整 task_acks_late=True；
+  - 配合 broker_transport_options={'visibility_timeout': 3600}；
+  - 避免任务执行太久未 ack。
+
+- Celery的内部调试命令
+
+  celery -A tasks report         # 查看配置与环境
+
+  celery -A tasks inspect registered   # 查看已注册任务
+
+  celery -A tasks inspect active     # 查看当前正在执行的任务
+
+  celery -A tasks inspect reserved    # 查看队列中待执行的任务
+
+  celery -A tasks inspect revoked    # 查看被撤销的任务
+
+  celery -A tasks inspect stats     # Worker 状态统计
+
+- 防止任务真正丢失
+
+  app.conf.update(
+
+    task_acks_late=True,         # 任务执行完再 ack，防止中途丢失
+
+    broker_transport_options={'visibility_timeout': 3600}, # 任务重现时间
+
+    task_reject_on_worker_lost=True,   # Worker 崩溃后重新入队
+
+    result_expires=3600*24,       # 结果保存 1 天
+
+    task_default_delivery_mode='persistent', # 任务消息持久化
+
+  )
+
+- 总结
+
+  [生产者发送任务]
+
+     ↓
+
+  Broker有消息？ → 否 → 检查broker连接/配置
+
+     ↓
+
+  Worker收到任务？ → 否 → 检查task注册/启动参数
+
+     ↓
+
+  Worker执行成功？ → 否 → 查看日志/traceback
+
+     ↓
+
+  Result保存？ → 否 → 检查backend配置/过期时间
+
+#### Celery日志是什么样配置的
+
+
 
