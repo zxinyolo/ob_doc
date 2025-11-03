@@ -134,4 +134,8 @@ app.control.inspect().reserved() # 查看待执行任务
 
 #### 常见问题
 
-1. 
+1. **Worker 内存暴涨 / OOM（Out Of Memory）**
+   - 场景
+     - 
+   - 常见原因
+   - 排查与解决
