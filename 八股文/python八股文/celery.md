@@ -111,5 +111,6 @@ app.control.inspect().reserved() # 查看待执行任务
 
 #### Celery日志是什么样配置的
 
-
+- 可以使用celery的启动参数添加日志输出路径和配置
+- 可以使用主服务的配置好的log对象
 
