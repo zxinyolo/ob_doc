@@ -1,6 +1,12 @@
  #### FastAPI 请求的完整生命周期
 
-1. ASGI声明周期入口：当请求进来时，ASGI server（如 **uvicorn**）执行：
+1. ASGI声明周期入口：当请求进来时，ASGI server（如 **uvicorn**）执行：await app(scope, receive, send)， 此时fastapi此时接管请求
+2. 中间件处理
+3. 路由匹配
+4. 构建请求上下文Request对象
+5. 依赖注入，fastapi如果发现参数时Depends(...)，递归解析出子依赖，形成一颗依赖树，调用内部函数，这个函数会自动执行依赖
+
+
 
 
 
