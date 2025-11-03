@@ -229,4 +229,8 @@ app.control.inspect().reserved() # 查看待执行任务
      - 子线程/子进程阻塞
      - Deadlock
      - 多线程访问共享资源
-     - 
+     - Backend未响应
+   - 排查：
+     - celery inspect active查看挂起任务
+     - strace或gdb看阻塞点
+     - 任务中加超时：app.conf.task_time_limit = 300
