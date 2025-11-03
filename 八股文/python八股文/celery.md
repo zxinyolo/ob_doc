@@ -173,4 +173,11 @@ app.control.inspect().reserved() # 查看待执行任务
      - Worker吃不完
      - 消息延迟严重
    - 排查思路
-     - 
+     - 查看任务堆积：redis-cli LLEN celery
+     - 检查是否有Worker崩溃
+     - 检查是否有任务重试死循环
+     - 检查是否有优先级队列或路由配置不当
+   - 临时扩容Worker
+   - 增加并发度
+   - 为长时间单独分队列
+   - 使用task_routes控制分流
