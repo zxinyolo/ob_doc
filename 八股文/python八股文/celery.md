@@ -167,3 +167,10 @@ app.control.inspect().reserved() # 查看待执行任务
      - 增加Broker心跳：app.conf.broker_transport_options = {'visibility_timeout': 3600, 'socket_keepalive': True}
      - 使用持久连接池（如redis_max_connections)
      - 如果频繁掉线，考虑RabbitMQ替代Redis
+4. Redis队列卡住/backlog堆积
+   - 场景
+     - Redis任务队列key中堆积几万条任务
+     - Worker吃不完
+     - 消息延迟严重
+   - 排查思路
+     - 
