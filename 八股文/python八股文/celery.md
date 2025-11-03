@@ -220,4 +220,13 @@ app.control.inspect().reserved() # 查看待执行任务
      - 未启用acks_late
      - Broker认为任务未完成又重新投递
    - 修复
-     - 开启acks_late=Tr
+     - 开启acks_late=True
+     - 幂等性设计：任务自身支持重复执行不出错
+
+7. 任务卡死不返回
+
+   - 原因：
+     - 子线程/子进程阻塞
+     - Deadlock
+     - 多线程访问共享资源
+     - 
