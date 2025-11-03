@@ -189,4 +189,9 @@ app.control.inspect().reserved() # 查看待执行任务
      - 日志中无报错
    - 原因分析：
      - Worker崩溃或未启动
-     - Broker使用Redis且任务过期()
+     - Broker使用Redis且任务过期(visibility_timeout)
+     - ACK丢失（Worker收到但未确认）
+     - 任务结果被清理（结果存储TTL）
+     - task_acks_late=False且Worker被kill
+   - 解决方案：
+     - 使用持久化队列：
