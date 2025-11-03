@@ -183,3 +183,10 @@ app.control.inspect().reserved() # 查看待执行任务
      - 为长时间单独分队列
      - 使用task_routes控制分流
 5. 任务丢失
+   - 场景
+     - Producer执行task.delay()
+     - worker没有执行
+     - 日志中无报错
+   - 原因分析：
+     - Worker崩溃或未启动
+     - Broker使用Redis且任务过期()
